@@ -146,7 +146,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/api/event/:event_id/invitation",
-    "title": "Update an invitation",
+    "title": "Send an invitation to some friends",
     "group": "Event",
     "parameter": {
       "fields": {
@@ -193,8 +193,8 @@ define({ "api": [
   },
   {
     "type": "post",
-    "url": "/api/event/:event_id/invitation",
-    "title": "Update an invitation",
+    "url": "/api/event/:event_id/invitation/toall",
+    "title": "Send an invitation to all friends",
     "group": "Event",
     "parameter": {
       "fields": {
@@ -230,7 +230,7 @@ define({ "api": [
     "version": "0.0.0",
     "filename": "src/Controller/EventController.php",
     "groupTitle": "Event",
-    "name": "PostApiEventEvent_idInvitation"
+    "name": "PostApiEventEvent_idInvitationToall"
   },
   {
     "type": "POST",
@@ -338,7 +338,7 @@ define({ "api": [
   {
     "type": "put",
     "url": "/api/event/:event_id/invitation",
-    "title": "Update an invitation",
+    "title": "Update status of invitation",
     "group": "Event",
     "parameter": {
       "fields": {
